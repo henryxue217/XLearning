@@ -1,9 +1,19 @@
+/* set the max width of the screen for content to 1140px and center it */
 .limited {
     max-width: 1140px; 
     margin: auto;
 }
 
 nav a{
-    text-align: center;
+    text-align:center;
+}
 
+/* background color for main section content a little grey then the nav bar and footer */
+.bg-lightgrey{
+    background-color: #e8eaeb !important;
+}
+.card-img-top{
+    height: 200px;
+    width: auto;
+   
 }
