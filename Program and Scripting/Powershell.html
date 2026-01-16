@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xLearning | Home</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../mystyles.css">
+</head>
+
+<body>
+    <header class="pb-4">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid justify-content-center limited">
+                <a class="navbar-brand" href="#">xLearning</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                It & Certs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Program & Scripting
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./Powershell.html">Powershell</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Personal Development
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Favorite Words</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+      
+    <main>
+        <div id="myoffcanvas">
+        <button id="myoffcanvasButton" class="btn btn-primary position-fixed" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling">Enable body scrolling</button>
+        
+        <div class="offcanvas offcanvas-end bg-lightgrey" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-unstyled">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li data-bs-dismiss="offcanvas"><a href="#keep-screen-alive5" >Bash</a></li>
+                    <li data-bs-dismiss="offcanvas"><a href="#keep-screen-alive1" >PowerShell</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="container limited">
+            <div class="row rounded">
+                <div class="col justify-content-center bg-lightgrey rounded">
+                    <h2 class="text-center mt-4">PowerShell</h2>
+                    <section class="content-section" id="keep-screen-alive1">
+                        <h5>Keep computer screen alive</h5>
+                        <pre class="bg-dark text-light p-2 rounded">
+                        <code language="powershell" >
+                            Write-Host "Screen will not turn off"
+                            $wsh = New-Object -ComObject WScript.Shell
+                            while ($true) {
+                            $wsh.SendKeys("{NUMLOCK}")
+                            Write-Host "Screen will never turn off"
+                            Start-Sleep -Seconds 30
+                            }
+                        </code>
+                        </pre>
+                        <p><i>SendKeys("{NUMLOCK}")</i> can be actual number"{1}"</p>
+                        <p><i>Start-Sleep -Seconds 30:</i> pauses the script for 30 seconds</p>
+                    </section>
+                    <section class="content-section" id="keep-screen-alive">
+                        <h5>Keep computer screen alive</h5>
+                        <pre class="bg-dark text-light p-2 rounded">
+                                            <code language="powershell" >
+                                                Write-Host "Screen will not turn off"
+                                                $wsh = New-Object -ComObject WScript.Shell
+                                                while ($true) {
+                                                $wsh.SendKeys("{NUMLOCK}")
+                                                Write-Host "Screen will never turn off"
+                                                Start-Sleep -Seconds 30
+                                                }
+                                            </code>
+                                            </pre>
+                        <p><i>SendKeys("{NUMLOCK}")</i> can be actual number"{1}"</p>
+                        <p><i>Start-Sleep -Seconds 30:</i> pauses the script for 30 seconds</p>
+                    </section>
+                    <section class="content-section" id="keep-screen-alive">
+                        <h5>Keep computer screen alive</h5>
+                        <pre class="bg-dark text-light p-2 rounded">
+                                            <code language="powershell" >
+                                                Write-Host "Screen will not turn off"
+                                                $wsh = New-Object -ComObject WScript.Shell
+                                                while ($true) {
+                                                $wsh.SendKeys("{NUMLOCK}")
+                                                Write-Host "Screen will never turn off"
+                                                Start-Sleep -Seconds 30
+                                                }
+                                            </code>
+                                            </pre>
+                        <p><i>SendKeys("{NUMLOCK}")</i> can be actual number"{1}"</p>
+                        <p><i>Start-Sleep -Seconds 30:</i> pauses the script for 30 seconds</p>
+                    </section>
+                    <section class="content-section" id="keep-screen-alive">
+                        <h5>Keep computer screen alive</h5>
+                        <pre class="bg-dark text-light p-2 rounded">
+                        <code language="powershell" >
+                            Write-Host "Screen will not turn off"
+                            $wsh = New-Object -ComObject WScript.Shell
+                            while ($true) {
+                            $wsh.SendKeys("{NUMLOCK}")
+                            Write-Host "Screen will never turn off"
+                            Start-Sleep -Seconds 30
+                            }
+                        </code>
+                        </pre>
+                        <p><i>SendKeys("{NUMLOCK}")</i> can be actual number"{1}"</p>
+                        <p><i>Start-Sleep -Seconds 30:</i> pauses the script for 30 seconds</p>
+                    </section>
+                    <section class="content-section" id="keep-screen-alive5">
+                        <h5>Keep computer screen alive</h5>
+                        <pre class="bg-dark text-light p-2 rounded">
+                                            <code language="powershell" >
+                                                Write-Host "Screen will not turn off"
+                                                $wsh = New-Object -ComObject WScript.Shell
+                                                while ($true) {
+                                                $wsh.SendKeys("{NUMLOCK}")
+                                                Write-Host "Screen will never turn off"
+                                                Start-Sleep -Seconds 30
+                                                }
+                                            </code>
+                                            </pre>
+                        <p><i>SendKeys("{NUMLOCK}")</i> can be actual number"{1}"</p>
+                        <p><i>Start-Sleep -Seconds 30:</i> pauses the script for 30 seconds</p>
+                    </section>
+
+                </div>
+            </div>
+    </main>
+    <footer class="bg-light">
+        <div class="container mt-4 pt-3">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>IT & Certs</h2>
+                    <ul>
+                        <li></li>
+
+                    </ul>
+                </div> <!-- end column -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>Program & Scripting</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Bash</li>
+                        <li>PowerShell</li>
+                    </ul>
+                </div> <!-- end column -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>Cybersecurity</h2>
+                    <ul>
+                        <li>Catering</li>
+                        <li>Delivery</li>
+                        <li>Swag Shop</li>
+                        <li>Support</li>
+                    </ul>
+                </div> <!-- end column -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>Personal Development</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div> <!-- end column -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>xAnything</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div> <!-- end column -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>About Us</h2>
+                    <img src="#" alt="logo">
+                    <p>&copy; 2025 &bull; all rights reserved.</p>
+                </div> <!-- end column -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer>
+    
+    <script src="../myscripts.js"></script>        
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+    
+
+</body>
+
+</html>
